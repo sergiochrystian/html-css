@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <!--Essa não é a forma IDEAL de inserir vídeo a site por conta do trafego enorme de dados e isso pode ficar caro para o dono do site-->
+    <video width="300" controls poster="imagens/joao.gomes.jpg">
+        <source src="midia/Festa Junina - 5.53MB (Status WhatsApp).mp4" type="video/mp4">
+        <!--Insira mais formatos aqui como m4V, webm, ogv... para que outros navegadores possam reproduzir o vídeo.-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+        <!--Caso queira deixa um link aqui para download do vídeo-->
+        <!--Em POSTER insira a imagem desejada para que fique na capa do vídeo-->
+    </video>
+   
+    <!--Inserindo vídeos da forma mais RECOMENDAVEL-->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/nK80IAmKkr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/165497369?h=00a644bbbe" width="300" height="273" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--O vimeo é uma plataforma quase igual ao youtube, a diferença é que o cleinte define a disponibilidade do seus videos, caso queira videos privados como video aulas é possivel fazer essa configuração pelo VIMEO-->
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas </h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar Café
+        <li>Filhos na escola
+        <li>Voltar para casa 
+    </ol>
+    <!--Apartir do HTML 5 a tag LI não tem obrigação de ser fechada, portato, aberto ou fechada irá funcionar-->
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Escovar os dentes 
+    </ol>
+    <!--São 5 opções de formas de marcar a lista.
+    se 1= A lista será na ordem númerica 1,2,3,4...
+    se A (maiúsculo)= A lista será na ordem A,B,C,D...
+    se a (minúsculo)= A lista será na ordem a,b,c,d...
+    se I (maiúscilo)= A lista será na ordem algarismo romano I,II,II,IV...
+    se i (minúsculo)= A lista será na ordem algarismo romano i,ii,iii,iv...
+    Ao defenir o TYPE (tipo)-->
+    <ol type="1" start="3">
+        <li>Acordar</li>
+        <li>Escovar os dentes
+        <li>Tomar Café
+        <li>Filhos na escola
+        <li>Voltar para casa
+    </ol>
+    <!--Se definido um START (inicio) a lista irá ser iniciado a partir do número definido dentro do parâmetro START-->
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="disc">
+        <li>SSD</li>
+        <li>Memória RAM</li>
+        <li>Monitor</li>
+    </ul>
+    <ul type="circle">
+        <li>Teclado</li>
+    </ul>
+    <ul type="square">
+        <li>Notebook</li>
+    </ul>
+    <h2>Minhas Músicas Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Aviões do Forró</li>
+            <li>Cavaleiros do Forró</li>
+            <li>Mastruz com Leite</li>
+            <li>Saia Rodada</li>
+            <li>Gatinha Manhosa</li>
+        </ol>
+        <li>Novas</li>
+        <ol>
+            <li>Aviões do Forró</li>
+            <li>Lithuania HQ</li>
+            <li>Melim</li>
+            <li>Djavan</li>
+            <li>Tarcísio do Acordeom</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendinho</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="circle">
+                <li>Ninja 01</li>
+                <li>Ninja 02</li>
+            </ul>
+        </ul>
+        <li>Nintendo</li>
+        <ul type="square">
+            <li>Mario Kart</li>
+            <li>Donk Kong</li>
+            <li>Aladim</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Bombapath</li>
+            <ul type="circle">
+                <li>Bomba 2015</li>
+                <li>Bomba UP 2017</li>
+            </ul>
+        <li>Fifa</li>
+        <li>Underground</li>
+        </ul>  
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl> <!--Definition List (ou seja, Lista de Definição)-->
+        <dt>HTML</dt> <!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!--Descrição ou Definição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JV - JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+   <!--No geral, a lista serve como um dicionário, é colocado o TERMO e em seguida sua definição--> 
+</body>
+</html>

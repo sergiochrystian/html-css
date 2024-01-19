@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+    Tudo que em HTML é ID    = em CSS é #
+    Tudo que em HTML é Class = em CSS é .
+*/
+body {
+    background-color: rgb(255, 196, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+h1 {
+    color: red;
+}
+
+h2 {
+    color: rgb(146, 3, 3);
+}
+
+/* É possível criar mais de uma classe a um elementeo. Em html dê apenas um espaço e adicione o nome da classe.
+Sendo possível tbm adicionar uma id e uma class ao mesmo elemento*/
+.basico {
+    color: gray;
+}
+
+.intermediario {
+    color: blue;
+}
+
+.avancado {
+    color: green;
+}

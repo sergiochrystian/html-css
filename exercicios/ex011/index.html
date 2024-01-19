@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto-1.png" type="image/png">
+        <source media="(max-width: 850px)" srcset="imagens/foto-2.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="imagens/foto-3.png" type="image/png">
+        <img src="imagens/foto-5.png" alt="Imagens Flexíveis">
+    </picture>
+    <!--Só irá funcionar se seguir a ordem correta dos tamanhos das imagens, DO MENOR PARA O MAIOR se tratando de ordem crescente-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/teste.em.audio.mp3" type="audio/mpeg">
+        <source src="midia/teste.em.audio.ogg" type="audio/ogg">
+        <source src="midia/teste.em.audio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/teste.em.audio.rar" target="_blank">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+        <!--Em preload ah 3 opções:
+        AUTO= Só carrega o site depois que o usuário carregar todo o áudio também.
+        NONE= Não vai carregar nada, apenas depois que o usuário carregar todo o áudio
+        METADATA= CARREGA ALGUMAS INFORMAÇÕES COMO, DURAÇÃO DO ÁUDIO, DATA...
+        (Portando deve ser usado METADATA)-->
+
+       <!--Ao adicionar AUTOPLAY o áudio iniciará assim que a página do site for aberta (atualmente 06.2k23 essa opção foi desabilitada do navegador Google Chrome porém testados em outros e está funcionando).
+        Ao adicionar CONTROLS irá aparecer os controles de áudio, como play/pause, volume e barra de local da música.
+        Ao adicionar o LOOP o áudio reiniciará após finalizado-->
+        
+        <!--Caso queira adicione outros formatos de música como OGG e WAV para que caso o navegador não reproduza MP3 irá ter outras opções de formato. Ainda assim caso o navegador não suporte nenhum dos formatos oferecidos irá aparecer a msgm adicionada ao parágafo que é para download do arquivo em MP3-->
+    <audio preload="metadata" controls>
+        <source src="midia/teste.em.audio01.mp3" type="audio/mpeg">
+    </audio>
+      
+</body>
+</html> 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+
+            /*
+            É possivel usar como southland= border-image: url('borda.png') 27 repeat;
+            */
+        }
+
+        /*
+        O ctrl + espaço não funciona dentro da url da tag border-image-source... nesse caso sendo nescerrário digitar o nome correto junto a extensão.
+
+        border-image-slice (fatiar)= Dando um número a frente ira fatiar a imagem inserida a borda (não é necessário ser uma medida como px, em, cm...).
+
+        border-image-repeat: repet;= Irá repetir várias vezes a imagem inserida a borda
+        */
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

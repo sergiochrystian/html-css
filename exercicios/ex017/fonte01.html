@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal;        /* ligther, normal, bold, bolder */
+            font-style: normal;         /* italic, normal, oblique */
+            text-decoration: underline; /* deixa o texto sublinhado */
+            /* IMPORTANTE DIZER QUE, A FAMÍLIA DE FONTE DEVE TER AS OPÇÕES DE NEGRITO, ITALICO, SUBLINHAMENTO */
+            /*
+            font-weight: Peso
+            Não pode haver espaço entre o número e a medida
+            16px geralmente é 1em
+            */   
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            /* shorthand font
+            -font-style -> font-weigth -> font-size -> font-family
+            É IMPORTANTE QUE MANTENHA ESSA ORDEM PARA TER A APLICAÇÃO EM APENAS UMA LINHA DE CÓDIGO
+            */
+        }
+        p {
+            font: italic bolder 1em 'Work Sans', sans-serif; /*USANDO APENAS UMA LINHA DAR-SE O NOME DE shorthand
+              /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 1em;
+            font-style: italic;
+            */
+        }
+        /*
+        Medidas Absolutas:
+        cm, mm, in(polegadas), px, pt(ponto), pc(paica)
+        
+        Medidas Relativas:
+        em (Altura do M maiúsculo)
+        ex (Altura do x minúsculo)
+        rem (relatico ao root, ou seja, a fonte que ta configurada no body)
+        vw (view width, ou a largura da view port)
+        vh (altura da viwe port - altura da tela)
+        %
+        A RECOMENDAÇÃO DA W3C É QUE SEJA USADO PX OU EM 
+        */
+    </style>
+    <!--Sempre que for usar uma fonte colocar no final depois da vírgula sans-serif para que caso o navegador não encontre ele exibirá a fonte padrão do dispositivo mostrando assim uma fonte sem a serifa-->
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nihil velit. Ipsa, fugit! Soluta, necessitatibus accusamus, cupiditate possimus repellendus veritatis hic quibusdam vero sit numquam animi sapiente! Aut, quae laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eligendi repudiandae voluptates vero ducimus, tenetur optio doloribus pariatur at natus commodi itaque provident assumenda labore nobis soluta perferendis rerum? Dicta.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel aperiam distinctio, expedita accusamus quod commodi sit similique doloremque. Quas, explicabo. Nulla odit voluptate ipsam! Odio repudiandae deserunt consectetur quod!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae obcaecati sit eligendi est qui dicta quo beatae praesentium, reiciendis numquam rerum. Exercitationem, nobis quas nisi delectus ab at omnis ad?</p>
+</body>
+</html>

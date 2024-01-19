@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte / Pré formatação</h2>
+    <p>O comando document.getElementById é escrito em linguagem JavaScript.</p>
+    <p>O comando <code>document.getElementById</code> é escrito em linguagem JavaScript.</p>
+    <!--É obeservado que ao inserir a tag code o texto fica com a config. monoespaçada, todas as letras obdecendo a margem-->
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 ==0:
+                print(f'0 número {num} é PAR')
+            else:
+                print(f'0 número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <!--A tag PRE serve para quebrar as linhas, obedecer as tabulações e deixar na página web igualmente está aqui no CODE. -->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <!--A tag Q é usada para inserir as ASPAS. Como se trata de uma citação não é certo apenas adicionar as aspas, o correto é usar a tag Q. -->
+    <h2>Não Citação</h2>
+    <p>"Não foi eu" que deixei as chaves</p>
+    <!--As aspas diretamente são usadas apenas em frases que não são sitações-->
+    <h2>Citações Completas</h2>
+    <p>Segundo o site designi.com.br, na data do dias das mães:</p>
+    <blockquote cite="https://www.designi.com.br/c978f89b0a0a2b21"> O filho chama a mãe de várias formas, Mãe, Mon, Mamma, Mamá... Não importa a língua.</blockquote>
+    <!--A tag BLOCKQUOTE faz com que o texto apareça deslocada na horizontal, ou seja, ela afasta da margem, informando que é uma citação para um determinado autor -->
+    <!--Referente ao PARÂMETRO CITE dentro da tag blockquote pode ser inserido o link da página, ela não irá aparecer na página, serve apenas para deixar a página interna sabendo que se trata de uma referência relacionada ao link em questão-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou gostando!</p>
+    <!--A tag ABBR faz com que a palavra ou sigla envelopada apareça com uma marcação semelhante a um sublinhado, descansando o mouse na sigla aparecerá o que for escrito em TITLE da tag ABBR -->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+<!--A tag BDO adicionada ao parâmetro DIR ("rlt= righ to left= Direita para a esquerda) serve para que o texto seja mostrado de forma invertida na página-->
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags (tags de agrupamento)</title>
+    <style>
+        body {
+            font-family: gotham;
+            background-color: orange;
+            margin: 0px;
+        }
+
+        section> p {
+            color: white;
+        }
+
+        header {
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #303030;
+            padding: 5px; 
+            margin: 5px;
+            box-shadow:  -3px 6px 7px #0000004d;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: yellow;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        main {
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 4px 4px 9px 0px rgb(0, 0, 0, 0.384);
+        }
+        /* É possível colocar apenas dois valores no BORDER-RADIUS assim é feito a configuração do canto acima e do canto abaixo oposto*/
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(112, 112, 112);  
+        }
+
+        article > h2 {
+            text-align: center;
+            font-family: autography;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        h1 {
+            color: white;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kaká Lanches</h1>
+        <nav>
+            <a href="https://www.mcdonalds.com.br/" target="_blank">Cardápio</a>
+            <a href="https://wa.me/99984956176/" target="_blank">Whatsapp</a>
+            <a href="https://www.instagram.com/kaka_lanchess/" target="_blank">Instagram</a>
+            <a href="#">Promoções</a>
+            <a href="#">Quem somos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>BiG Kk Duplo - Big Kk - BiG Kk Bacon</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>O melhor lanche do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam praesentium repellendus error reiciendis vitae voluptas provident. Aliquam officia libero neque similique repellat! Nemo expedita odio distinctio obcaecati, ut magni?</p>
+                <aside>
+                    <p>Escrito e editado por <b>Sérgio Chrystian</b>.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por f5designer.</p>
+    </footer>
+    <!--
+    section =  seção
+    article =  artigo
+    footer  =  rodapé
+    aside   =  aparte
+    -->
+    <div id="bola"></div>
+</body>
+</html>

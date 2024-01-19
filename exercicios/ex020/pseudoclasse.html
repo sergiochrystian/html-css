@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: gray;
+            border: 3px solid black;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        /*
+        display inline-block: Tudo na mesma linha
+        heigth: Altura
+        Width:  Largura
+        */
+        div:hover {
+            background-color: yellow;
+
+        }
+
+        /*
+        # é um :id
+        . é uma classe
+        : é uma pseudo-classe
+        
+        hover: significa que quando passar o mouse por cima. No ex. acima foi adicionado uma configuração de estado: apenas quando passar o  mouse por cima irá ficar amarelo.
+        
+        Para adicionar uma Pseudo-classe é utilizando : (dois pontos) ela relaciona o estado de um determinado elemento; se ele e está ativo, se ele ta marcado, vázio, habilitado...
+        */
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="03">03</div>
+</body>
+</html>

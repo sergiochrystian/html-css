@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* Configurações globais das CSS é representada pelo asterisco (*) */
+        /* É necessário usar aqui na opção de degradê TOP, que fica o de cima a baixo */
+        * {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to left, #FFB910, #FF6D0B, #FD3C4B, #EA26ED, #7D1EFF );
+            background-attachment: fixed;
+            /* Ao adicionar valor e porcentagem (25%) depois da cor assim será aplicado */
+            /* 45deg ou -45deg= O dedradê fica a 45º */
+            /* Caso queira circular troque de LINEAR-GRADIENTE para RADIAL-GRADIENT (circle,...*/
+            /* background-attachment: fixed; SIGNIFICA QUE FOI FIXADO O FUNDO DA TELA PARA QUE NÃO O DEGRADÊ NÃO FIQUE SOLTO NA TELA*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Gradiente</h1>
+</body>
+</html>

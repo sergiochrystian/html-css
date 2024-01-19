@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 { /*box-level.
+            /*CASO QUEIRA DEIXAR O h1 COMO INLINE= display: inline;*/
+            background-color: rgb(165, 165, 165);
+            height: 400px;
+            width: 400px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /* border: 10px solid darkslategray 
+            Aqui é o exemplo de shothands referente a configuração a cima
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* padding: 10px 10px 10px 10px;
+            (Caso queira, aqui poderia ser usado apenas um 10px pelos 4 serem o mesmo. 10px 20px seria, cima e baixo 10px e lado esquerdo e direito 20px, poderia ser simplificado)
+            Aqui é o exemplo de shothands referente a configuração a cima
+            */            
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            /*SHORTHANDS= margin: 10px 10px 40px 10px;
+            margin: auto;
+            /*Margim:auto; Faz com que a caixa centralize horizontalmente automaticamente a página (se for uma caixa, caso seja texto seria, text-align: center*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;
+            /*SHORTHANDS= outline: 5px dashed black;
+            Outline= É um tracejado que existe DENTRO da margem*/
+
+            /*
+            PARA SIMPLIFICAR TODAS ESSAS CONFIGURAÇÕES ACIMA, USA-SE shorthands, ou seja, as configurações apenas em uma linha. OBEDECENDO O SENTIDO HORÁRIO DAS CONFIGURAÇÕES
+            */
+        }
+    
+        a { /*inline-level*/
+             /*CASO QUEIRA DEIXAR O (a) COMO box-level= display: block;*/
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+
+            padding: 10px;
+        }
+        /*
+        border-width: é a largura da borda
+        border-style: solid: Linha reta! Se dashed (pontilhada) se dotted (com pontos) se double (linha dupla), se grouve (3d)
+        border-color: cor da borda
+        */
+        /*SENDO POSSÍVEL TBM CRIAR UM=
+        display: inline-block
+        FICARIA UM DENTRO DO OUTRO, SENDO POSSÍVEL ALTERAR ALTURA ACIMA E ABAIXO
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <!--# Hashtag é usada para tornar o link ativo mesmo sem conteúdo válido-->
+</body>
+</html>

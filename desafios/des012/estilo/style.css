@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: px;
+}
+/*
+Responsável por colar a barra do HEADER nas laterais e parte superior
+*/
+
+html,body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    /*text-transform: uppercase;*/
+}
+/*
+usando font-variant: samll-caps (deixará as letras em caixa alta, no entanto, as iniciais ficaram maiores.
+
+usando text-transform: uppercase (deixará a letra em CAIXA ALTA
+*/
+
+header > p {
+    padding-bottom: 50px;
+}
+
+/*Adicionando um padding-top no H1 e um padding-bottom no P deixará o texto no centro do header*/
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/*
+Caso necessite colocar link dentro do conteúdo é necessário que seja feito essa configuração na tag para que fique especificado as configurações direcionadas apenas as tags em questão assim livrando o conteúdo!
+*/
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+/*
+Aqui em section é dado o espaço necessário da View Height (altura da página) para que seja lido da melhor forma
+line-height: 2em; (É dado o espaço entre linhas)
+padding-left: 30px; (É feito um afastamento da margin para direita, no caso, esquerda para a direita!
+*/
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

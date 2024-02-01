@@ -60,7 +60,6 @@ header a, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
-
 /*
 Caso necessite colocar link dentro do conteúdo é necessário que seja feito essa configuração na tag para que fique especificado as configurações direcionadas apenas as tags em questão assim livrando o conteúdo!
 */
@@ -72,13 +71,20 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
-}
-
-/*
+    /*
 Aqui em section é dado o espaço necessário da View Height (altura da página) para que seja lido da melhor forma
 line-height: 2em; (É dado o espaço entre linhas)
 padding-left: 30px; (É feito um afastamento da margin para direita, no caso, esquerda para a direita!
 */
+}
+
+section > p {
+    
+    padding-bottom: 2em;
+    /*
+    serve para da espaço no parágrafo
+    */
+}
 
 section.normal {
     background-color: white;
@@ -91,13 +97,23 @@ section.imagem {
 }
 
 section.imagem > p {
-    padding: 5px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.562);
     /*
     Ao inserir a tag display:... o texto vai se trasformar numa caixa que se adapta ao tamanho do conteúdo.
     padding: 5px; (faz com que o texto não fique colado na caixa.
     */
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    /*Dado a configuração rigth e center porque o conteúdo importante da imagem em questão está do lado direito e no centro da imagem*/
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {

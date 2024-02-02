@@ -94,12 +94,23 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    /*box-shadow: inset... (insere a borda na parte interna da imagem
+    COVER informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o contêiner inteiro (nesse caso, todo o html ).
+    
+    PARALAX
+    Ao final o efeito foi inserido com a tag:
+    background-attachment:fixed; (fixando as imagens ao fundo da tela.
+    */
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow:  1px 1px 0px black;
     /*
     Ao inserir a tag display:... o texto vai se trasformar numa caixa que se adapta ao tamanho do conteúdo.
     padding: 5px; (faz com que o texto não fique colado na caixa.
@@ -109,6 +120,7 @@ section.imagem > p {
 section#img01 {
     background-image: url(../imagens/background001.jpg);
     background-position: right center;
+
     /*Dado a configuração rigth e center porque o conteúdo importante da imagem em questão está do lado direito e no centro da imagem*/
 }
 

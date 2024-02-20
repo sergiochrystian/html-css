@@ -20,20 +20,39 @@
         padding: 4px;
     }
 
+    caption {
+        font-size: 1,5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
     thead, tfoot {
         background-color: gray;
         color: white;
+    }
+
+    thead > tr > th {
+        position: sticky; /*grudável*/
+        top: -1px;
+        background-color: gray;
+    } /* Usado para fixar o Título que seria Estado e População E quando encerrar a tabela ele sumir indo para o texto com Lorem em questão*/
+
+    tbody > tr:nth-child(2n) {
+        background-color: lightgray;
     }
     
     td.numero {
         text-align: right;
     }
+
 </style>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!--
+    <!--ANATOMIA
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (Legenda) fica acima da tabela
             THEAD (Cabeça)
                 tr, td, th
             TBODY (Corpo)
@@ -42,20 +61,39 @@
                 tr, td, th
     -->
 
-    <!--
+    <!--ORDEM
         Existe toda uma semântica em questão, INDEPENDENTE da ordem
         CABEÇA
         CORPO
         PÉ
         O navegador irá iserir de forma correta referente a ordem!
     -->
+
+    <!--SEMÂNTICA
+        Não causando nenhum resultado visual, no entanto, é importante que seja inserido para que os mecanismos de busca do google leia de forma coerente!
+
+        scope="col" significa que irei deixar mais claro ainda pra o HTML que o Estado é um título de coluna, ou seja, os dados veem abaixo!
+
+        scope="row" significa que é um título da linha porque o dado está a frente, seguindo a mesma linha!
+    -->
+
+    <!--EFEITO ZEBRADO
+        tbody > tr:nth-child(2n) Se queres que o efeito zebrado seja apenas na linha do corpo tem que ser definido antes em style o TBODY seguindo de TR que são as linhas e para alternar as cores é usado uma PSEUDO-CLASSE que é a NTH-CHILD ( ) entre parenteses é usado a quantidade de linhas que deseja alterar a cor ou alteração devida! No lugar de 2n pode ser alterado para (odd) impar ou (even) par
+    -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>203.062.512</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -166,13 +204,10 @@
                 <td class="numero">636 707</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="numero"><strong>203 062 512</strong></td>
-            </tr>
-        </tfoot>
     </table>
-
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis non voluptatibus unde corrupti laboriosam earum ipsum doloremque inventore neque quam at ut, quidem sequi enim est nesciunt architecto delectus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, esse voluptates consectetur iste ducimus doloribus quidem quisquam laboriosam suscipit aperiam pariatur tenetur eaque? Ullam aut exercitationem alias, quia maxime animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur harum voluptatum reiciendis itaque dolor, iste dignissimos odit maiores vero molestiae adipisci dolorem saepe inventore aliquid tempore minus at, omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed ipsum ut, quis ad inventore error voluptatem officiis officia quidem obcaecati omnis! Temporibus ex totam explicabo culpa quam sit eligendi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum tempora facilis possimus minus, nemo doloribus molestias totam? Excepturi aliquam quis voluptas quisquam commodi nobis perspiciatis ex odio, velit sed.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis non voluptatibus unde corrupti laboriosam earum ipsum doloremque inventore neque quam at ut, quidem sequi enim est nesciunt architecto delectus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, esse voluptates consectetur iste ducimus doloribus quidem quisquam laboriosam suscipit aperiam pariatur tenetur eaque? Ullam aut exercitationem alias, quia maxime animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur harum voluptatum reiciendis itaque dolor, iste dignissimos odit maiores vero molestiae adipisci dolorem saepe inventore aliquid tempore minus at, omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed ipsum ut, quis ad inventore error voluptatem officiis officia quidem obcaecati omnis! Temporibus ex totam explicabo culpa quam sit eligendi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum tempora facilis possimus minus, nemo doloribus molestias totam? Excepturi aliquam quis voluptas quisquam commodi nobis perspiciatis ex odio, velit sed.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis non voluptatibus unde corrupti laboriosam earum ipsum doloremque inventore neque quam at ut, quidem sequi enim est nesciunt architecto delectus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, esse voluptates consectetur iste ducimus doloribus quidem quisquam laboriosam suscipit aperiam pariatur tenetur eaque? Ullam aut exercitationem alias, quia maxime animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur harum voluptatum reiciendis itaque dolor, iste dignissimos odit maiores vero molestiae adipisci dolorem saepe inventore aliquid tempore minus at, omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed ipsum ut, quis ad inventore error voluptatem officiis officia quidem obcaecati omnis! Temporibus ex totam explicabo culpa quam sit eligendi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum tempora facilis possimus minus, nemo doloribus molestias totam? Excepturi aliquam quis voluptas quisquam commodi nobis perspiciatis ex odio, velit sed.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis non voluptatibus unde corrupti laboriosam earum ipsum doloremque inventore neque quam at ut, quidem sequi enim est nesciunt architecto delectus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, esse voluptates consectetur iste ducimus doloribus quidem quisquam laboriosam suscipit aperiam pariatur tenetur eaque? Ullam aut exercitationem alias, quia maxime animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur harum voluptatum reiciendis itaque dolor, iste dignissimos odit maiores vero molestiae adipisci dolorem saepe inventore aliquid tempore minus at, omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed ipsum ut, quis ad inventore error voluptatem officiis officia quidem obcaecati omnis! Temporibus ex totam explicabo culpa quam sit eligendi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum tempora facilis possimus minus, nemo doloribus molestias totam? Excepturi aliquam quis voluptas quisquam commodi nobis perspiciatis ex odio, velit sed.</p>
 </body>
 </html>

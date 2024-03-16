@@ -33,14 +33,22 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <!--scope="col"= Significa que é definido que Grupos está em 1 coluna-->
+                <th scope="col">Nomes</th>
+                <th colspan="3"scope="colgroup" >Filmes</th>
+                <!--scope="colgroup"= Significa que é definido que Filmes está em 3 colunas, ou seja, um grupo de 3-->
             </tr>
         </thead>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1.000,00</td>
+            <!--Total é row (linha) e não grupo de colunas porque o que se refere a ele é apenas o valor-->
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <!--scope="rowgroup"= Significa que é definido que Filmes está em 3 linhas, ou seja, um grupo de 3 linhas-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -59,7 +67,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>

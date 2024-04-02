@@ -24,12 +24,27 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        col.cnome {
+            background-color: rgb(245, 241, 0);
+        }
+
+        col.cgrupo {
+            background-color: rgb(245, 25, 25);
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
 
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <!--Aqui em COLGROUP adicionando a tag COL (de coluna) é possível definir que seja feita a configuração desejada de apenas uma coluna inteira, tipo cor como no exempo da class adicionada ao CSS-->
+
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>

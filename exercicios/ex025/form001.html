@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!--
+            * action="casatro.php"= É usado para enviar para o banco de dados em PHP.
+            * method="get"= Por padrão mesmo que não inserido ele vem com "get" ao alterar para POST os dados preenchidos no form não irão aparecer na barra de endereço. (NÃO USAR GET EM CAMPOS SENÍVEIS, COMO SENHA, CARTÃO DE CRÉDITO...) Mais de 3000 byts apenas com POST.
+            * autocomplete="off"= É usado para DESLIGAR o preenchimento automático no navegador
+        -->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <!--
+            * label for= É usado para relacionar o nome ao ID e sobrenome ao seu ID. Servindo para facilitar mecanismos de buscas, algo semântico sem contar com que quando o usuário clicar no nome vai aparecer a barrinha permitindo digitar.
+            * Para fazer a ligação do nome com a caixa onde o texto será digitado é necessário inserir esse NAME="NOME" sendo útil para HTML e PHP. No caso do "ID" ele é útil para JavaScript
+        -->
+        <p><input type="submit" value="Enviar"></p>
+        <!--
+            * input type="submit"= É usado para criar a caixa, ou botão.
+            * value="Enviar"= É usado para escrever dentro do botão.
+        -->
+    </form>
+</body>
+</html>

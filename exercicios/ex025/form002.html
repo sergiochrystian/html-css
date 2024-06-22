@@ -12,14 +12,21 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do Usuário" autocomplete="username">
+        <!--
+            * requered= Significa "necessário" Se o usuário clicar em enviar sem preencher os campos necessários irá ser exibido a mensagem (Preencha este campo.)
+            * minlength="?" O usuário é obrigado a digitar a quantidade minima de caracteres definida pelo desenvolvedor.
+            * maxlength="?" O usuário poderá digitar apenas a quantidade máxima de caracteres definida pelo desenvolvedor.
+            * placeholder="?" Adicione um nome que será exibido no campo em questão.
+            * autocomplete="username"= O autocomplete adicionado direto na tag input dará mais opções do que na tag form.
+        -->
         </p>
         <p>
             <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen">
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">

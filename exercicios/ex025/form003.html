@@ -14,14 +14,32 @@
         </p>
         <p>
             <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" value="5" required>
         <!--
             * input type="number"= Será permitido digitar apenas números e não letras.
             * min="?"= Permite digitar o número mínimo.
             * max="?"= Permite digitar o úmero máximo.
-            * step="0.5"= Permite avaliar com número quebrado tipo 1,5 | 6,5 | 8,5...
+            * step="0.5"= Permite avaliar com número quebrado tipo 1,5 | 6,5 | 8,5... (Caso queira 1 a 1 é só colocar 0.1)
+            * placeholder="0 a 10"= Irá aparecer no campo bem clarinho par digitar o valor.
+            * value=""= CASO O VALUE SEJA ADICIONADO O PLACEHOLDER NÃO IRÁ APARECER, ele precede a opção1
         -->
         </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="nome" id="imes" value="2024-06">
+            <!--
+            * Serve para adicionar Período MÊS de ANO
+            -->
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2024-06-24">
+            <!--
+            * Caso queira inserir uma data predefinida tem que ser digitada de trás pra frente ANO-MÊS-DIA
+            -->
+        </p>
+        <label for="ihora">Horário da Prova</label>
+        <input type="time" name="hora" id="ihora">
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

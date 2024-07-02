@@ -37,12 +37,19 @@
                 <option value="CONT">Contabilista</option>
                 <option>Desenvolvedor</option>
                 <option>Professor</option>
+                <!--
+                * Datalist da a opção de o usuário DIGITAR qual a profissão'.
+                * Ao adicionar VALUE a option na tela de preenchimento aparecerá apenas as inicias definidas em value.
+                -->
             </datalist>
         </p>
 
         <p>
-            <label for="imsg">Mensagem</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+            <!--
+            * textarea... é definido em COLS uma quantidade de colulas (ou caracteres exibidos em colulas) e em ROWS definido a quantidade de linha do quadrado da mensagem. NÃO SENDO LIMITADO.
+            -->
         </p>
 
         <p>

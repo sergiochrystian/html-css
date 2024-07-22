@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.style.css">
+    <!-- Link adicionado para aparecer o MENU 'hamburguer'. Adicionado tbm o span abaixo do h1 -->
+</head>
+<body>
+    <header> <!-- CABEÇALHO -->
+        <h1>F5 Designer</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <!--
+        JavaScrip. adicionado onclickMenu() para fazer com que seja adicionado a opção de esconder e aparecer as opões ao ciclar no MENU hamburguer.
+        -->
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Logotipo</a></li>
+                <li><a href="#">Flyer</a></li>
+                <li><a href="#">Ambientação</a></li>
+                <li><a href="#">Montagens</a></li>
+                <li><a href="#">Motion</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main> <!-- CORPO -->
+        <article>
+            <h2>Quem somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab debitis sit! Sunt ipsa maiores unde aliquid exercitationem vero atque eveniet id. Eaque incidunt, fuga rem cupiditate eligendi officia quis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus omnis a ad eligendi laboriosam molestias necessitatibus quis. Animi, aliquid consequatur. Voluptas dolores pariatur maxime sequi reiciendis accusamus, quaerat animi illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus omnis a ad eligendi laboriosam molestias necessitatibus quis. Animi, aliquid consequatur. Voluptas dolores pariatur maxime sequi reiciendis accusamus, quaerat animi illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus omnis a ad eligendi laboriosam molestias necessitatibus quis. Animi, aliquid consequatur. Voluptas dolores pariatur maxime sequi reiciendis accusamus, quaerat animi illo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum esse autem doloremque! Ipsum optio suscipit corrupti quaerat molestiae, officiis, ratione aperiam praesentium veritatis ex explicabo? Optio qui similique dignissimos fugiat?</p>
+        </article>
+    </main>
+    <footer>
+        Desenvolvido por F5 Designer!
+    </footer>
+    <script>
+        function clickMenu() {
+            itens.style.display = 'block'
+        }
+    </script>
+</body>
+</html>

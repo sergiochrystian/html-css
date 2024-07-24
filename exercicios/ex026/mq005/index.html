@@ -37,9 +37,19 @@
         Desenvolvido por F5 Designer!
     </footer>
     <script>
-        function clickMenu() {
-            itens.style.display = 'block'
+        function clickMenu() { 
+            if (itens.style.display == 'block') { 
+                itens.style.display = 'none' 
+            } else {
+                itens.style.display = 'block'
+            }
         }
+        /* CONDICIONAL if (se) else (senão) */
+        /* Em JavaScript igual (=) se escreve igual igual (==).
+        Nesse caso se o menu estiver sendo exibido (block) ele vai esconder por conto do (none) abaixo.
+        ELSE (senão) se tiver escondido o display é (block) então irá mostrar.
+        */
+        /* Só um igual (=) se chama RECEBE */
     </script>
 </body>
 </html>

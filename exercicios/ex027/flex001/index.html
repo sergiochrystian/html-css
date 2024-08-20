@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        /* A div externa é conhecida como PAI e a principal característa é colocar o DISPLAY: FLEX; nele */
+        div.conteiner {
+            background-color: gray;
+
+            display: flex;
+        }
+        /* E aqui na div interna é conhecida como FILHO, é necessároi colocar FLEX: AUTO; para que assim fiquei como a Água (bastante FLEXível) */
+        div.item {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* Ao inserir AUTO em flex, as divs irão ocupar todo o espaço do CONTEINER */
+        }
+        /* 
+        Essas configurações de FLEX no display e AUTO em flex já deixa as partes responsívas se adaptanto ao tamanho do dispositivo onde irá ser exibido, seja celular ou tv.
+        */
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

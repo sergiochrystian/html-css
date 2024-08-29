@@ -1,0 +1,18 @@
+flex-direction: row;
+Obs.: As caixas são criadas no modo linha e da direita para a esquerda, como originalmente fazemos nossas leituras, da esquerda para a direita. (IMAGEM 01)
+
+flex-direction: row-reverse;
+Obs.: As caixas serão criadas no modo reverso. da esquerda para a direita (IMAGEM 02)
+
+felx-direction: column;
+Obs.: Feitas para celulares, formato de coluna, em pé. Originalmente de cima para baixo. (IMAGEM 03)
+
+felx-direction: column-reverse;
+Obs.: Feitas para celulares, formato de coluna, em pé. Aqui como é reverso as caixas serão criadas de baixo pra cima. (IMAGEM 04)
+
+Eixos (axis)
+Ao criar uma caixa (box) é criado o eixo principal conhecido por (main-axis) gerando assim 2 pontos, o inicial (main-start) e o final (main-end) (IMAGEM 05)
+
+Eixo transversal (cross-axis)
+Gerando assim 2 pontos, o primeiro em cima e o outro em baixo. (IMAGEM 06)
+

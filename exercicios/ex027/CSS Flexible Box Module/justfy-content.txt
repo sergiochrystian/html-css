@@ -1,0 +1,57 @@
+(row)
+justify-content, ele vai fazer o alinhamento em relação ao main-axis, ou seja, ao eixo principal.
+
+IMAGEM 01
+justify-content: flex-start
+O primeiro item vai ficar grudado no main-star (que é o início da caixa) e os outros ficaram grudado' nele e o espaço em branco irá para o final do eixo principal (main-end).
+
+IMAGEM 02
+justify-content: flex-start
+Ao contrário do star que as caixas iniciam no começo do bloco pai, esse END as caixas irão iniciar do final fazendo com que o espaço em branco inverta e fica no flex-start.
+
+IMAGEM 03
+justify-content: center
+Faz com que os blocos "filhos" fiquem ao centro do contêiner, ou bloco pai, fazendo com que os espaços em brancos fiquem nas laterais, divididos de forma individual.
+
+
+IMAGEM 04
+justify-content: space-between (entre)
+Faz com que o primeiro e último elemento estejam grudados respectivamente ao início e ao final e os outros estarão distribuídos por igual.
+
+
+IMAGEM 05
+justify-content: space-evenly (uniformemente)
+Cria um espaçamento uniforme, ou seja, antes do primeiro bloco filho e depois e assim suscetivelmente.
+
+
+IMAGEM 06
+justify-content: space-around (em volta)
+Caso tenha 3 elemento dentro de contêiner criará 3 espaços por igual e criará os blocos filhos dentro desses elementos. Obs.: É notável que, é criado um espaçamento do item atual a frente e outro espaço em branco que é o fundo do próximo.
+
+
+IMAGEM GERAL 07 (row)
+
+
+
+
+
+(column)
+justify-content
+flex-flow: column nowrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

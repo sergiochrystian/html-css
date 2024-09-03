@@ -1,0 +1,4 @@
+IMAGEM 01
+flex-direction + flex-wrap
+flex-flow: row nowrap;
+Funciona como uma shorthand, é permitido inserir mais de um valor dentro de uma única propriedade CSS.

@@ -27,8 +27,7 @@ IMAGEM 05 (RESUMO)
 flex-wrap: wrap-reverse;
 MESMO DA IMAGEM 04, PORÉM REVERSO.
 
-4º Aula
-11:04
+
 
 
 

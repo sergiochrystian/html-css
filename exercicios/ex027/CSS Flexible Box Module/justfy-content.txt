@@ -32,7 +32,7 @@ Caso tenha 3 elemento dentro de contêiner criará 3 espaços por igual e criar�
 IMAGEM GERAL 07 (row)
 
 
-
+-------------------------------------------------------------------------------
 
 
 (column)
@@ -41,8 +41,21 @@ flex-flow: column nowrap;
 
 
 
-Pausa da aula Alinhamento dos eixos flexblox
-13:46
+
+
+PARA USAR align-items É NECESSÁRIO AUMENTAR A AUTURA DO CONTEINER (height: 300px)
+
+IMAGEM 01 (Dentro de align-items)
+aing-items: stretch (esticar)
+
+
+IMAGEM 02 (Dentro de align-items)
+align-items: flex-start
+Obs:. As caixas internas ficam alinhadas no início do caixa pai, ou seja, do corss-axis.
+
+IMAGEM 03 (Dentro de align-items)
+align-items: flex-center
+Obs.: Nesse caso as caixas serão alinhadas ao centro, e os espaços em branco ficarão acima e abaixo do cross-axis.
 
 
 

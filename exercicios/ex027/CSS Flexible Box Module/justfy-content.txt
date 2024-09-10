@@ -41,6 +41,8 @@ flex-flow: column nowrap;
 
 
 
+Pausa da aula Alinhamento dos eixos flexblox
+13:46
 
 
 

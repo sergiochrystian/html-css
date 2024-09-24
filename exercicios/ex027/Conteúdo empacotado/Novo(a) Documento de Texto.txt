@@ -1,0 +1,26 @@
+align-items: Vai alinhar os itens dentro do eixo transversal.
+justify-content: Vai alinhar os itens dentro do eixo principal.
+
+
+
+
+
+
+align-contet: Vai alinhar os elementos no eixo transversal desde que estejam empacotados.
+align-contet: stretch
+Imagem 02
+*Ele por padrão vem com o valor strecth (esticar). Se dentro de um retângulo a itens e ao diminuir ele levará o último item para baixo.
+
+align-contet: flex-start
+Imagem 03
+*Ele vai pegar todos os elementos e vai grudar no cross-start, ou seja, todos ficam em cima e o espaço em branco fica no cross-end, ou seja, no final.
+
+align-contet: flex-end
+Imagem 04
+*Ele vai pegar todos os elementos e vai grudar no cross-end, ou seja, todos ficam em em baixo e o espaço em branco fica no cross-start, ou seja, em cima.
+
+align-contet: center
+Imagem 05
+*Ele vai pegar todos os elementos inclusives quebrados e vai criar no cross-start e cross-end deixando assim os espaços em branco a cima e a baixo.
+
+

@@ -1,0 +1,14 @@
+
+*Quando a gente cria contêiners flexbox é importante saber que a parte de fora é flex, mas a de dentro não é. No entanto, é possível deixar os elementos internos como conteiners. (avançado)!
+
+
+Imagem 01
+flex-item
+
+
+Imagem 02 e 03
+Order
+Por padrão todos os elementos já vem com order:0
+Todo item em flexblox que estiver dentro da caixa vai estar em order:0
+Caso tenha outros valores dentro dos contêiners e remova o 0 de order ele vai alinhar em ordem numeral (imagem 03).
+

@@ -12,3 +12,7 @@ Por padrão todos os elementos já vem com order:0
 Todo item em flexblox que estiver dentro da caixa vai estar em order:0
 Caso tenha outros valores dentro dos contêiners e remova o 0 de order ele vai alinhar em ordem numeral (imagem 03).
 
+
+Imagem 04
+align-self
+Não serve para pais (conteiners) apenas para itens internos (filhos)

@@ -29,6 +29,8 @@ flex-grow: 1 Esse elemento vai crescer.
 Resultado na imagem 07.
 
 
+Imagem 08
+Resumo do resultado das configurações acima.
 
 
 

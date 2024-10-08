@@ -1,0 +1,33 @@
+grow= Crescer
+shrink= Encolher
+
+Imagem 01
+Por padrão a propriedade
+flex-shrink: 1
+Vem com o valor 1 (pode encolher)
+E a
+flex-grow: 0
+Vem com o valor 0 (não pode crescer)
+
+Imagem 02
+Obs.: Se o contêiner crescer e o valor estiver 0 não irá acontecer nada. Se o valor de shrink estiver 1 ele vai encolher o conteúdo.
+
+Imagem 03
+Obs.: Se o grow estiver 1 o conteúdo interno do contêiner irá crescer junto.
+
+Imagem 04
+Obs.: Caso inverta os valores padrões como na imagem 04, os elementos do contêiner irão vazar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+Imagem 01
+shorthands nas configurações de filho'.
+
+ao invés de:
+	flex-basis: 150px
+	flex-grow: 0
+	flex-shrink: 1
+colocar
+	flex: 0 1 150px
+
+ordem das configurações de flex:
+
+	flex= flex-grow + flex-shrink + flex-basis
+
+-------------------------------------------------------------------
+
+Imagem 02
+	flex: initial
+é o mesmo que 
+	flex: 0 1 auto
+------------------------------
+Imagem 03
+	flex: none
+é o mesmo que
+	flex: 0 0 auto
+(Nada flexível)
+------------------------------
+Imagem 04
+	flex: auto
+é o mesmo que
+	flex: 1 1 auto
+(Sendo o contrário do 0 0 1 auto essa propriedade te permite crescer e diminuir a vontade o elemento e o limite natural de crescer e diminuir será o tamanho natural do conteúdo)
+------------------------------
+Imagem 05
+	flex: 3 1 auto
+é o mesmo que
+	flex: 3
+
+
+
+
+
+
+
+
+
+
+
+

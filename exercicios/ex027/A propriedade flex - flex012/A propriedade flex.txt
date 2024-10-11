@@ -1,0 +1,16 @@
+Imagem 01
+shorthands nas configurações de filho'.
+
+ao invés de:
+	flex-basis: 150px
+	flex-grow: 0
+	flex-shrink: 1
+colocar
+	flex: 0 1 150px
+
+ordem das configurações de flex:
+
+	flex= flex-grow + flex-shrink + flex-basis
+
+
+

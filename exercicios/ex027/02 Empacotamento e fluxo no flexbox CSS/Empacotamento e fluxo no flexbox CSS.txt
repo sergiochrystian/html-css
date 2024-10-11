@@ -1,0 +1,37 @@
+Propriedade.
+
+Imagem 01
+flex-wrpa: nowrap; (NÃO	encapsule, NÃO empacote).
+Obs.: O tamanho de um bloco, vai depender muito do conteúdo que vai
+ter dentro dele.
+O BLOCO PAI AO ENCOLHER AUTOMATICAMENTE OS BLOCOS FILHOS IRÃO ENCOLHER JUNTOS. DANDO A IDÉIAS DE EXPREMIDOS.
+
+
+Imagem 02
+flex-wrap (wrap, significa encapsulamento ou empacotamento).
+flex-wrap: wrap;
+Obs.: AO SER DIMINUIDO A TELA O ÚLTIMO BLOCO IRÁ DESCER POR CONTA DA DIREÇÃO (cross-axis) ESQUERDA ABAIXO.
+
+
+Imagem 03
+flex-wrap: wrap-reverse;
+Obs.: NESSE CASO O ÚTIMO BLOCO FILHO IRÁ QUEBRAR PARA CIMA A ESQUERDA CASO A TELA SEJA MENOR OU MAXIMIZADA.
+
+
+IMAGEM 04 (RESUMO)
+flex-wrap: wrap;
+NÃO É QUE O ÚLTIMO CLOBO VAI PRA CIMA OU PRA BAIXO. ELE VAI SEMPRE NA DIREÇÃO DO EIXO (cross-axis) TRANSVERSAL.
+
+
+IMAGEM 05 (RESUMO)
+flex-wrap: wrap-reverse;
+MESMO DA IMAGEM 04, PORÉM REVERSO.
+
+
+
+
+
+
+
+
+

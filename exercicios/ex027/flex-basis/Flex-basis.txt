@@ -1,0 +1,9 @@
+Imagem 01
+Por padrão a propriedade flex-basis:auto já vem automaticamente com o valor auto.
+
+Imagem 02
+Caso seja alterado o tamanho independente do conteúdo interno  é manterá o tamanho definido no valor.
+
+Imagem 03
+Como na imagem, se o tamanho do contêiner for menor que o conteúdo interno ele irá vazar.
+

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* AQUI AO PASSAR O MOUSE POR CIMA DO MENU, SAIRÁ A SETA E VIRA A MÃOZINHA*/
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul { /* Remove as bolinhas que marcas as palavras */
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px; /* Cria um espaçamento entre as opções */
+    text-decoration: none; /* Remove a linha abaixo da palavra/link */
+    text-align: center;
+    background-color: rgba(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray; /* Cria linhas em cima de cada palavra */
+}
+
+menu > ul > li a:hover { /* Ao passar o mouse em cima ele muda de cor */
+    background-color: gray;
+}
+
+main {
+    width: 90vw; /* 90% da largura da tela */
+    background-color: white;
+    margin: auto; /* Fica centralizado a qualquer tela */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 { /* Espaçamento entre o h2 ou Título e o início do texto/par[agrafo */
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+footer {
+    padding: 20px;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} /*Remove todos os espaçamentos padrões*/
+
+
+/*FLEXBOX DENTRO DE OUTRO*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1em;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*justify-content: space-between Faz com que o menu de opções fique grudado do lado esquerdo da tela*/
+    align-items: center;
+}
+
+header > h1 {
+    border: 1px dotted black;
+    flex: 0 0 200px;
+    /*flex= nessas configurações ele não vai encolher, não vai crescer, ele irá ficar fixo em 200px*/
+}
+
+header > nav {
+    border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row wrap; /*Opção que faz com que o menu quebre certinho*/
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0.336);
+}

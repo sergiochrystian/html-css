@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+/*header E (a vírgula faz a junção) header > nav...*/
+
+header > h1 {
+    flex-basis: 50px; /*Diminui o espaço em branco do título Meu site*/
+}
+
+header > nav > a {
+    width: 90vw;
+} /*Deita o retângulo preto das opções grandes*/
